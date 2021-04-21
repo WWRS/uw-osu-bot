@@ -8,9 +8,9 @@ class TournamentState:
     instance = None  # type: TournamentState
 
     def __init__(self):
-        self.pros = {}  # type: Dict[str: Person]
-        self.amateurs = {}  # type: Dict[str: Person]
-        self.tournamentmaps = {}  # type: Dict[str: TournamentMap]
+        self.pros = {}  # type: Dict[int: Person]
+        self.amateurs = {}  # type: Dict[int: Person]
+        self.tournamentmaps = {}  # type: Dict[int: TournamentMap]
         TournamentState.instance = self
 
     def is_running(self) -> bool:
